@@ -11,7 +11,7 @@ schema_view = get_schema_view(
         default_version='v1',
         description='Library demo project',
         terms_of_service='demo.com',
-        contact=openapi.Contact(email='sarniyozovorif@gmail.com'),
+        contact=openapi.Contact(email='mukhammad.irmatov@gmail.com'),
         license=openapi.License(name="demo licence"),
     ),
     public=True,
@@ -30,4 +30,6 @@ urlpatterns = [
         'swagger', cache_timeout=0), name='swagger-swagger-ui'),
     path('redoc/', schema_view.with_ui(
         'redoc', cache_timeout=0), name='schema-redoc')
+
+
 ]
